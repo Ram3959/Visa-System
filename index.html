@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Visa Portal - Fast & Transparent Visa Processing System</title>
+  <meta name="description" content="A comprehensive online visa application, requirements guide, real-time application tracker, and embassy approval system.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="#" class="nav-brand">
+        🌐 Global<span>Visa</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#requirements">Visa Requirements</a></li>
+          <li><a href="#apply">Apply Online</a></li>
+          <li><a href="#tracker">Track Status</a></li>
+          <li><a href="#admin">Admin Portal</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <h1>Streamlined Online Visa Application Portal</h1>
+      <p>Explore international visa requirements, apply digitally in 4 easy steps, and track your application status in real-time.</p>
+      
+      <div class="hero-cta">
+        <a href="#apply" class="btn btn-accent">🚀 Apply For Visa</a>
+        <a href="#tracker" class="btn btn-outline">🔍 Track Existing Application</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <h3>50+</h3>
+          <p>Destinations Supported</p>
+        </div>
+        <div class="stat-item">
+          <h3>15,000+</h3>
+          <p>Visas Processed</p>
+        </div>
+        <div class="stat-item">
+          <h3>99.2%</h3>
+          <p>Approval Rate</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visa Requirements Explorer -->
+  <section id="requirements" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Popular Visa Destinations & Requirements</h2>
+        <p>Select your travel destination to check entry rules, fees, processing timelines, and required documents.</p>
+      </div>
+
+      <div class="grid-3">
+        <!-- Country 1: Japan -->
+        <div class="card country-card">
+          <div>
+            <div class="country-header">
+              <div class="country-flag-title">
+                <span class="flag-icon">🇯🇵</span>
+                <h3>Japan</h3>
+              </div>
+              <span class="tag-badge">eVisa Available</span>
+            </div>
+            <ul class="country-info-list">
+              <li><span>Visa Type:</span> <strong>Tourist & Business</strong></li>
+              <li><span>Processing Time:</span> <strong>4 - 5 Business Days</strong></li>
+              <li><span>Government Fee:</span> <strong>$90.00</strong></li>
+              <li><span>Validity:</span> <strong>90 Days</strong></li>
+              <li><span>Key Documents:</span> <strong>Passport, Photo, Bank Statement</strong></li>
+            </ul>
+          </div>
+          <button onclick="selectCountryForApply('Japan')" class="btn btn-primary" style="width: 100%; justify-content: center;">Apply for Japan Visa</button>
+        </div>
+
+        <!-- Country 2: USA -->
+        <div class="card country-card">
+          <div>
+            <div class="country-header">
+              <div class="country-flag-title">
+                <span class="flag-icon">🇺🇸</span>
+                <h3>United States</h3>
+              </div>
+              <span class="tag-badge">Non-Immigrant</span>
+            </div>
+            <ul class="country-info-list">
+              <li><span>Visa Type:</span> <strong>B1/B2 Visitor & Student</strong></li>
+              <li><span>Processing Time:</span> <strong>7 - 10 Business Days</strong></li>
+              <li><span>Government Fee:</span> <strong>$185.00</strong></li>
+              <li><span>Validity:</span> <strong>up to 10 Years</strong></li>
+              <li><span>Key Documents:</span> <strong>DS-160 Form, Passport, Proof of Funds</strong></li>
+            </ul>
+          </div>
+          <button onclick="selectCountryForApply('United States')" class="btn btn-primary" style="width: 100%; justify-content: center;">Apply for US Visa</button>
+        </div>
+
+        <!-- Country 3: UK -->
+        <div class="card country-card">
+          <div>
+            <div class="country-header">
+              <div class="country-flag-title">
+                <span class="flag-icon">🇬🇧</span>
+                <h3>United Kingdom</h3>
+              </div>
+              <span class="tag-badge">Standard Visitor</span>
+            </div>
+            <ul class="country-info-list">
+              <li><span>Visa Type:</span> <strong>Tourist, Business & Student</strong></li>
+              <li><span>Processing Time:</span> <strong>5 - 7 Business Days</strong></li>
+              <li><span>Government Fee:</span> <strong>$140.00</strong></li>
+              <li><span>Validity:</span> <strong>6 Months</strong></li>
+              <li><span>Key Documents:</span> <strong>Passport, Financial History, Accommodation</strong></li>
+            </ul>
+          </div>
+          <button onclick="selectCountryForApply('United Kingdom')" class="btn btn-primary" style="width: 100%; justify-content: center;">Apply for UK Visa</button>
+        </div>
+
+        <!-- Country 4: France -->
+        <div class="card country-card">
+          <div>
+            <div class="country-header">
+              <div class="country-flag-title">
+                <span class="flag-icon">🇫🇷</span>
+                <h3>France (Schengen)</h3>
+              </div>
+              <span class="tag-badge">Schengen Area</span>
+            </div>
+            <ul class="country-info-list">
+              <li><span>Visa Type:</span> <strong>Short-Stay Schengen</strong></li>
+              <li><span>Processing Time:</span> <strong>5 - 10 Business Days</strong></li>
+              <li><span>Government Fee:</span> <strong>$95.00</strong></li>
+              <li><span>Validity:</span> <strong>up to 90 Days</strong></li>
+              <li><span>Key Documents:</span> <strong>Travel Insurance, Flight Itinerary</strong></li>
+            </ul>
+          </div>
+          <button onclick="selectCountryForApply('France (Schengen)')" class="btn btn-primary" style="width: 100%; justify-content: center;">Apply for Schengen Visa</button>
+        </div>
+
+        <!-- Country 5: UAE -->
+        <div class="card country-card">
+          <div>
+            <div class="country-header">
+              <div class="country-flag-title">
+                <span class="flag-icon">🇦🇪</span>
+                <h3>United Arab Emirates</h3>
+              </div>
+              <span class="tag-badge">Express eVisa</span>
+            </div>
+            <ul class="country-info-list">
+              <li><span>Visa Type:</span> <strong>Tourist & Business Entry</strong></li>
+              <li><span>Processing Time:</span> <strong>2 - 3 Business Days</strong></li>
+              <li><span>Government Fee:</span> <strong>$110.00</strong></li>
+              <li><span>Validity:</span> <strong>30 Days</strong></li>
+              <li><span>Key Documents:</span> <strong>Passport Copy, Passport Photo</strong></li>
+            </ul>
+          </div>
+          <button onclick="selectCountryForApply('United Arab Emirates')" class="btn btn-primary" style="width: 100%; justify-content: center;">Apply for UAE Visa</button>
+        </div>
+
+        <!-- Country 6: Canada -->
+        <div class="card country-card">
+          <div>
+            <div class="country-header">
+              <div class="country-flag-title">
+                <span class="flag-icon">🇨🇦</span>
+                <h3>Canada</h3>
+              </div>
+              <span class="tag-badge">Visitor Permit</span>
+            </div>
+            <ul class="country-info-list">
+              <li><span>Visa Type:</span> <strong>Temporary Resident Visa</strong></li>
+              <li><span>Processing Time:</span> <strong>6 - 8 Business Days</strong></li>
+              <li><span>Government Fee:</span> <strong>$100.00</strong></li>
+              <li><span>Validity:</span> <strong>up to Passport Expiry</strong></li>
+              <li><span>Key Documents:</span> <strong>Proof of Means, Ties to Home Country</strong></li>
+            </ul>
+          </div>
+          <button onclick="selectCountryForApply('Canada')" class="btn btn-primary" style="width: 100%; justify-content: center;">Apply for Canada Visa</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Online Visa Application Form -->
+  <section id="apply" class="section" style="background: #f1f5f9;">
+    <div class="container">
+      <div class="section-title">
+        <h2>Online Visa Application</h2>
+        <p>Complete the 4-step application form below to submit your official visa request.</p>
+      </div>
+
+      <div class="form-container">
+        <!-- Stepper Header -->
+        <div class="stepper">
+          <div class="step-item active" data-step="1">
+            <div class="step-number">1</div>
+            <div class="step-label">Personal Info</div>
+          </div>
+          <div class="step-item" data-step="2">
+            <div class="step-number">2</div>
+            <div class="step-label">Travel Details</div>
+          </div>
+          <div class="step-item" data-step="3">
+            <div class="step-number">3</div>
+            <div class="step-label">Documents</div>
+          </div>
+          <div class="step-item" data-step="4">
+            <div class="step-number">4</div>
+            <div class="step-label">Review & Submit</div>
+          </div>
+        </div>
+
+        <!-- Multi-Step Form -->
+        <form id="visaApplicationForm" onsubmit="submitApplication(event)">
+          
+          <!-- Step 1: Personal Info -->
+          <div class="form-step active" data-step="1">
+            <h3 style="margin-bottom: 1.25rem;">Step 1: Applicant Personal Information</h3>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="fullName">Full Name (as in Passport) *</label>
+                <input type="text" id="fullName" placeholder="e.g. Payal" required>
+              </div>
+              <div class="form-group">
+                <label for="passportNo">Passport Number *</label>
+                <input type="text" id="passportNo" placeholder="e.g. Z9482710" required>
+              </div>
+              <div class="form-group">
+                <label for="dob">Date of Birth *</label>
+                <input type="date" id="dob" required>
+              </div>
+              <div class="form-group">
+                <label for="nationality">Current Nationality *</label>
+                <input type="text" id="nationality" placeholder="e.g. Indian" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" placeholder="name@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" placeholder="+91 9876543210" required>
+              </div>
+            </div>
+            <div class="form-actions">
+              <div></div>
+              <button type="button" onclick="nextStep()" class="btn btn-primary">Next: Travel Details ➔</button>
+            </div>
+          </div>
+
+          <!-- Step 2: Travel Details -->
+          <div class="form-step" data-step="2">
+            <h3 style="margin-bottom: 1.25rem;">Step 2: Destination & Travel Details</h3>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="formDestination">Destination Country *</label>
+                <select id="formDestination" required>
+                  <option value="Japan">Japan</option>
+                  <option value="United States">United States</option>
+                  <option value="United Kingdom">United Kingdom</option>
+                  <option value="France (Schengen)">France (Schengen)</option>
+                  <option value="United Arab Emirates">United Arab Emirates</option>
+                  <option value="Canada">Canada</option>
+                  <option value="Australia">Australia</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="formVisaType">Visa Category *</label>
+                <select id="formVisaType" required>
+                  <option value="Tourist">Tourist / Leisure Visa</option>
+                  <option value="Business">Business / Conference Visa</option>
+                  <option value="Student">Student / Academic Visa</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="travelDate">Intended Date of Travel *</label>
+                <input type="date" id="travelDate" required>
+              </div>
+              <div class="form-group">
+                <label for="durationDays">Duration of Stay (Days) *</label>
+                <input type="number" id="durationDays" min="1" max="365" placeholder="e.g. 15" required>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button type="button" onclick="prevStep()" class="btn btn-outline" style="color: var(--text-dark); border-color: #cbd5e1;">⬅ Back</button>
+              <button type="button" onclick="nextStep()" class="btn btn-primary">Next: Upload Documents ➔</button>
+            </div>
+          </div>
+
+          <!-- Step 3: Documents Upload Simulated -->
+          <div class="form-step" data-step="3">
+            <h3 style="margin-bottom: 1.25rem;">Step 3: Document Verification Upload</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">Please select sample files for Passport Copy and Photo to complete verification.</p>
+            
+            <div class="form-grid">
+              <div class="form-group">
+                <label>Passport Main Page Scan *</label>
+                <div class="file-upload-box">
+                  <span style="font-size: 1.5rem;">📄</span>
+                  <p style="font-size: 0.85rem; margin-top: 0.25rem;"><strong>Click to select Passport file</strong> or drag & drop</p>
+                  <input type="file" accept="image/*,.pdf" style="margin-top: 0.5rem;" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Passport-size Photo (White Background) *</label>
+                <div class="file-upload-box">
+                  <span style="font-size: 1.5rem;">🖼️</span>
+                  <p style="font-size: 0.85rem; margin-top: 0.25rem;"><strong>Click to select Photo</strong> or drag & drop</p>
+                  <input type="file" accept="image/*" style="margin-top: 0.5rem;" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button type="button" onclick="prevStep()" class="btn btn-outline" style="color: var(--text-dark); border-color: #cbd5e1;">⬅ Back</button>
+              <button type="button" onclick="nextStep()" class="btn btn-primary">Next: Review & Submit ➔</button>
+            </div>
+          </div>
+
+          <!-- Step 4: Review & Payment -->
+          <div class="form-step" data-step="4">
+            <h3 style="margin-bottom: 1.25rem;">Step 4: Application Summary & Fee Submission</h3>
+            
+            <div style="background: #f8fafc; border: 1px solid var(--border-color); padding: 1.25rem; border-radius: var(--radius-md); margin-bottom: 1.5rem;">
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; font-size: 0.95rem;">
+                <div><span style="color: var(--text-muted);">Applicant Name:</span> <strong id="reviewName">-</strong></div>
+                <div><span style="color: var(--text-muted);">Passport Number:</span> <strong id="reviewPassport">-</strong></div>
+                <div><span style="color: var(--text-muted);">Nationality:</span> <strong id="reviewNationality">-</strong></div>
+                <div><span style="color: var(--text-muted);">Destination:</span> <strong id="reviewCountry">-</strong></div>
+                <div><span style="color: var(--text-muted);">Visa Category:</span> <strong id="reviewVisaType">-</strong></div>
+                <div><span style="color: var(--text-muted);">Intended Date:</span> <strong id="reviewDate">-</strong></div>
+              </div>
+              <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px dashed var(--border-color); display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-size: 1.1rem; font-weight: 700;">Total Application Fee:</span>
+                <span id="calculatedFee" style="font-size: 1.5rem; font-weight: 800; color: var(--primary);">$90.00</span>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button type="button" onclick="prevStep()" class="btn btn-outline" style="color: var(--text-dark); border-color: #cbd5e1;">⬅ Back</button>
+              <button type="submit" class="btn btn-accent" style="padding: 0.85rem 2rem; font-size: 1.05rem;">💳 Submit Application & Pay</button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Application Tracker -->
+  <section id="tracker" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Real-Time Visa Application Tracker</h2>
+        <p>Enter your Application Reference ID to inspect live progress and download your official E-Visa permit.</p>
+      </div>
+
+      <div class="tracker-box">
+        
+        <!-- Sample Test Chips -->
+        <div class="sample-tracker-btns">
+          <span>Quick Demo Tracking IDs:</span>
+          <button class="chip-btn" onclick="quickTrack('VISA-2026-8812')">VISA-2026-8812 (Approved)</button>
+          <button class="chip-btn" onclick="quickTrack('VISA-2026-4391')">VISA-2026-4391 (Pending)</button>
+          <button class="chip-btn" onclick="quickTrack('VISA-2026-7205')">VISA-2026-7205 (Rejected)</button>
+        </div>
+
+        <div class="tracker-search">
+          <input type="text" id="trackerInput" placeholder="Enter Reference ID (e.g. VISA-2026-8812)" value="VISA-2026-8812">
+          <button onclick="trackApplication()" class="btn btn-primary" style="white-space: nowrap;">Track Application</button>
+        </div>
+
+        <div id="noResult" style="display: none; text-align: center; color: var(--danger); padding: 2rem;">
+          ⚠️ No visa application found matching this Tracking ID. Please verify your reference number.
+        </div>
+
+        <div id="trackerResult" style="display: block;">
+          
+          <!-- Header info -->
+          <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 1rem; border-bottom: 1px solid var(--border-color); flex-wrap: wrap; gap: 1rem;">
+            <div>
+              <h3 style="font-size: 1.4rem;" id="trackAppId">VISA-2026-8812</h3>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">Submitted on: <span id="trackDate">2026-08-10</span></p>
+            </div>
+            <div>
+              <span id="trackStatusBadge" class="badge badge-approved">Approved</span>
+            </div>
+          </div>
+
+          <!-- Status Timeline -->
+          <div class="status-timeline">
+            <div class="timeline-step completed" id="timelineStep1">
+              <div class="timeline-dot">✓</div>
+              <div class="timeline-title">Submitted</div>
+            </div>
+            <div class="timeline-step completed" id="timelineStep2">
+              <div class="timeline-dot">✓</div>
+              <div class="timeline-title">Doc Verification</div>
+            </div>
+            <div class="timeline-step completed" id="timelineStep3">
+              <div class="timeline-dot">✓</div>
+              <div class="timeline-title">Embassy Review</div>
+            </div>
+            <div class="timeline-step completed" id="timelineStep4">
+              <div class="timeline-dot">✓</div>
+              <div class="timeline-title" id="timelineTitle4">Issued / Approved</div>
+            </div>
+          </div>
+
+          <!-- Details Grid -->
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; background: #f8fafc; padding: 1.25rem; border-radius: var(--radius-md);">
+            <div><span style="font-size: 0.8rem; color: var(--text-muted);">APPLICANT NAME</span><p style="font-weight: 700;" id="trackName">Payal</p></div>
+            <div><span style="font-size: 0.8rem; color: var(--text-muted);">PASSPORT NO</span><p style="font-weight: 700;" id="trackPassport">Z9482710</p></div>
+            <div><span style="font-size: 0.8rem; color: var(--text-muted);">DESTINATION</span><p style="font-weight: 700;" id="trackCountry">Japan</p></div>
+            <div><span style="font-size: 0.8rem; color: var(--text-muted);">VISA CATEGORY</span><p style="font-weight: 700;" id="trackType">Tourist</p></div>
+          </div>
+
+          <!-- E-Visa Permit (if Approved) -->
+          <div id="evisaSection">
+            <div class="evisa-card">
+              <div class="evisa-header">
+                <div>
+                  <h4 style="color: var(--primary); font-size: 1.2rem;">OFFICIAL ELECTRONIC VISA PERMIT</h4>
+                  <p style="font-size: 0.8rem; color: var(--text-muted);">Government Immigration & Border Authority</p>
+                </div>
+                <div style="text-align: right;">
+                  <span style="font-size: 0.75rem; color: var(--text-muted);">PERMIT REF NO:</span>
+                  <p style="font-weight: 800; color: var(--secondary);" id="evisaRef">VISA-2026-8812</p>
+                </div>
+              </div>
+
+              <div class="evisa-grid">
+                <div class="evisa-field">
+                  <label>Full Name</label>
+                  <p id="evisaName">PAYAL</p>
+                </div>
+                <div class="evisa-field">
+                  <label>Passport Number</label>
+                  <p id="evisaPassport">Z9482710</p>
+                </div>
+                <div class="qr-box" rowspan="2">
+                  <span>VALID<br>E-VISA</span>
+                  <div style="font-size: 1.2rem; margin-top: 2px;">🏁</div>
+                </div>
+
+                <div class="evisa-field">
+                  <label>Destination</label>
+                  <p id="evisaCountry">JAPAN</p>
+                </div>
+                <div class="evisa-field">
+                  <label>Visa Type</label>
+                  <p id="evisaType">TOURIST</p>
+                </div>
+                
+                <div class="evisa-field">
+                  <label>Date of Issue</label>
+                  <p id="evisaIssueDate">2026-08-14</p>
+                </div>
+                <div class="evisa-field">
+                  <label>Valid Until</label>
+                  <p id="evisaValidDate" style="color: var(--success);">2027-08-14</p>
+                </div>
+              </div>
+
+              <div style="margin-top: 1.5rem; text-align: right;">
+                <button onclick="printEVisa()" class="btn btn-primary btn-sm">🖨️ Print / Download E-Visa Certificate</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Admin & Embassy Portal -->
+  <section id="admin" class="section" style="background: #f1f5f9;">
+    <div class="container">
+      <div class="section-title">
+        <h2>Embassy Officer & Admin Portal</h2>
+        <p>Manage submitted applications, review applicant files, and grant approval or rejection decisions.</p>
+      </div>
+
+      <div class="admin-card">
+        
+        <!-- Stat Cards -->
+        <div class="admin-stats-grid">
+          <div class="stat-card">
+            <span class="num" id="statTotal">3</span>
+            <span class="label">Total Applications</span>
+          </div>
+          <div class="stat-card">
+            <span class="num" id="statPending" style="color: var(--warning);">1</span>
+            <span class="label">Pending Verification</span>
+          </div>
+          <div class="stat-card">
+            <span class="num" id="statApproved" style="color: var(--success);">1</span>
+            <span class="label">Approved Visas</span>
+          </div>
+          <div class="stat-card">
+            <span class="num" id="statRejected" style="color: var(--danger);">1</span>
+            <span class="label">Rejected Visas</span>
+          </div>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="admin-header">
+          <h3>Application Requests Management</h3>
+          <div class="admin-filter-bar">
+            <label for="adminFilter">Filter Status:</label>
+            <select id="adminFilter" onchange="renderAdminTable()" style="width: auto; padding: 0.4rem 0.8rem;">
+              <option value="All">All Statuses</option>
+              <option value="Pending">Pending</option>
+              <option value="Approved">Approved</option>
+              <option value="Rejected">Rejected</option>
+            </select>
+            <button onclick="resetSampleData()" class="btn btn-outline btn-sm" style="color: var(--text-dark); border-color: #cbd5e1;">↺ Reset Demo Data</button>
+          </div>
+        </div>
+
+        <!-- Applications Data Table -->
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Tracking ID</th>
+                <th>Applicant Name</th>
+                <th>Passport No</th>
+                <th>Destination & Category</th>
+                <th>Submitted Date</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="adminTableBody">
+              <!-- Rendered dynamically by app.js -->
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Modal Popup -->
+  <div id="successModal" class="modal-overlay">
+    <div class="modal-content">
+      <div class="modal-icon">✓</div>
+      <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Visa Application Submitted!</h3>
+      <p style="color: var(--text-muted); margin-bottom: 1.25rem;">Your application has been received and is currently under verification by the embassy immigration office.</p>
+      
+      <div style="background: #f8fafc; border: 1px dashed var(--primary); padding: 1rem; border-radius: var(--radius-md); margin-bottom: 1.5rem;">
+        <span style="font-size: 0.8rem; color: var(--text-muted);">YOUR TRACKING ID</span>
+        <h4 id="modalTrackingId" style="font-size: 1.6rem; color: var(--primary); font-weight: 800;">VISA-2026-9999</h4>
+      </div>
+
+      <div style="display: flex; gap: 0.75rem; justify-content: center;">
+        <button onclick="closeModal()" class="btn btn-outline" style="color: var(--text-dark); border-color: #cbd5e1;">Close</button>
+        <button onclick="trackFromModal()" class="btn btn-primary">Track Application ➔</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>GlobalVisa Portal</h4>
+          <p style="font-size: 0.85rem;">Official Academic Project Submission for Online Visa Processing and Status Verification.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Navigation</h4>
+          <ul>
+            <li><a href="#hero">Home Overview</a></li>
+            <li><a href="#requirements">Destination Requirements</a></li>
+            <li><a href="#apply">Online Application Form</a></li>
+            <li><a href="#tracker">Status Tracker</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Supported Regions</h4>
+          <ul>
+            <li><a href="#requirements">Asia Pacific (Japan, Australia)</a></li>
+            <li><a href="#requirements">North America (USA, Canada)</a></li>
+            <li><a href="#requirements">Europe (Schengen, UK)</a></li>
+            <li><a href="#requirements">Middle East (UAE)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Global Visa Portal - Student Web Project. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
